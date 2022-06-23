@@ -1,3 +1,36 @@
+#include "Header.h"
+
+vector<int> Lotto(int numSpots, int numSelected)
+{
+    vector<int> v;
+    for (int i = 1; i <= numSpots; i++)
+    {
+        v.push_back(i);
+    }
+    random_shuffle(v.begin(), v.end());
+    vector<int> winners;
+    for (int i = 0; i < numSelected; i++)
+    {
+        winners.push_back(v[i]);
+    }
+    sort(winners.begin(), winners.end());
+    return winners;
+}
+
+int main() 
+{
+    srand(time(0));
+    vector<int> winners;
+    winners = Lotto(51,6);
+
+    for (int i = 0; i < winners.size(); i++)
+    {
+        cout << "Winner " << i + 1 << ": " << winners[i] << endl;
+    }
+
+    return 0;
+}
+
 /*
 1.  What is the STL? What is a vector? 
 Answer: STL is a C++ library that provides a collection of
@@ -38,36 +71,3 @@ Answer:
 vector<int> v;
 v.push_back(1);
 */
-
-#include "Header.h"
-
-vector<int> Lotto(int numSpots, int numSelected)
-{
-    vector<int> v;
-    for (int i = 1; i <= numSpots; i++)
-    {
-        v.push_back(i);
-    }
-    random_shuffle(v.begin(), v.end());
-    vector<int> winners;
-    for (int i = 0; i < numSelected; i++)
-    {
-        winners.push_back(v[i]);
-    }
-    sort(winners.begin(), winners.end());
-    return winners;
-}
-
-int main() 
-{
-    srand(time(0));
-    vector<int> winners;
-    winners = Lotto(51,6);
-
-    for (int i = 0; i < winners.size(); i++)
-    {
-        cout << "Winner " << i + 1 << ": " << winners[i] << endl;
-    }
-
-    return 0;
-}
