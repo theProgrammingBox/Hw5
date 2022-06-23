@@ -1,5 +1,3 @@
-#include "header.h"
-
 /*
 Answer the following questions regarding STL and the 
 vector container: 
@@ -70,7 +68,7 @@ Also write a short program that lets you test the
 function.
 */
 
-#include "header.h"
+#include "Header.h"
 
 vector<int> Lotto(int numSpots, int numSelected)
 {
