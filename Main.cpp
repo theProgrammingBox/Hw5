@@ -1,6 +1,4 @@
 /*
-Answer the following questions regarding STL and the 
-vector container: 
 1.  What is the STL? What is a vector? 
 Answer: STL is a C++ library that provides a collection of
 functions and classes that can be used to solve problems.
@@ -39,33 +37,6 @@ modifier.
 Answer: 
 vector<int> v;
 v.push_back(1);
-*/
- 
-/*
-Write the following program using a vector: 
- 
-A common game is the lottery card. The card has 
-numbered spots of which a certain number are selected 
-at random. Write a Lotto() function that takes two 
-arguments. The first should be the number of spots on a 
-lottery card and the second should be the number of 
-spots selected at random. The function should return a 
-vector<int> object that contains, in sorted order, the 
-numbers selected at random. Use your function as 
-follows: 
- 
-Vector<int> winners; 
-winners = Lotto(51,6); 
-
-This would assign to winners a vector that contains six 
-numbers selected randomly from the range 1 through 51. 
-Note that simply using rand() doesn’t quite do the job 
-because it may produce duplicate values. Suggestion: 
-Have the function create a vector that contains all the 
-possible values, use random_shuffle(), and then use the 
-beginning of the shuffled vector to obtain the values. 
-Also write a short program that lets you test the 
-function.
 */
 
 #include "Header.h"
