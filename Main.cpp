@@ -15,7 +15,7 @@ vector<int> Lotto(int numSpots, int numSelected);
  * STL Vectors
  *_________________________________________________________
  * This program will generate a number of lottery numbers
- * and display them to the user.
+ * and display them in order to the user.
  *_________________________________________________________
  * INPUT:
  * None:	No user input is required.

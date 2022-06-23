@@ -12,10 +12,10 @@ Main.o: Main.cpp Header.h
 	$(CC) $(FLAGS) -c Main.cpp
 
 tar:
-	tar -cf Hw3.tar Hw3.scr Makefile $(FILES)
+	tar -cf Hw5.tar Hw5.scr Makefile $(FILES)
 
 clean:
-	rm *.o *.tar *.scr Hw3
+	rm *.o *.tar *.scr Hw5
 
 sudoClean:
-	rm *.o *.scr Hw3
+	rm *.o *.scr Hw5
