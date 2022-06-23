@@ -60,7 +60,7 @@ vector<int> Lotto(int numSpots, int numSelected)
 
 int main() 
 {
-    srand (time(0));
+    srand(time(0));
     vector<int> winners;
     winners = Lotto(51,6);
 
